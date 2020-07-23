@@ -1,0 +1,28 @@
+.Grid-Container {
+  max-width: 768px;
+  margin: auto;
+  padding-top: 13rem;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  .Grid-Item {
+    margin: 0.5rem;
+    background-color: transparent;
+    color: #FFFFFF;
+    h2 {
+      margin: 0.5rem 0;
+    }
+    .Image-Button {
+      padding: 0;
+      cursor: pointer;
+      border: none;
+      .Thumbnail {
+        display: block;
+        width: 100%;
+        transition: transform 0.2s ease-in-out;
+        &:hover {
+          transform: scale(1.07);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.Login {
+  max-width: 768px;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  label {
+    font-size: 1.15rem;
+  }
+  input {
+    display: block;
+    font-size: 1.15rem;
+    width: 20rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 1rem;
+    border: none;
+  }
+  button {
+    font-size: 0.85rem;
+    font-weight: bold;
+    padding: 0.4rem 0.8rem;
+    border: 2px solid #FFFFFF;
+    background-color: transparent;
+    color: #FFFFFF;
+    cursor: pointer;
+    border-radius: 1rem;
+    &:hover {
+      background-color: #0070ea;
+      transition: background-color 0.2s ease-in-out;
+    }
+  }
+  .Error {
+    font-size: 0.75rem;
+  }
+}

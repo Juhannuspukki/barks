@@ -1,0 +1,98 @@
+.Menu {
+  position: fixed;
+  z-index: 1000;
+  transition: background-color 0.25s ease-in-out;
+  .Menu-Container {
+    max-width: 768px;
+    margin: auto;
+    text-align: center;
+    h1, p {
+      color: transparent;
+      transition: color 0.25s ease-in-out;
+    }
+    button {
+      margin-left: 2rem;
+      font-size: 2em;
+      float: left;
+      border: none;
+      padding: 0;
+      color: transparent;
+      background-color: transparent;
+      transition: color 0.25s ease-in-out;
+      cursor: pointer;
+    }
+  }
+  &:hover {
+    background-color: #1B1B1BCC;
+    h1, p {
+      color: #FFFFFF;
+    }
+    button {
+      color: #FFFFFF;
+    }
+  }
+}
+
+.Reader {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+
+  .Page {
+    display: inline-block;
+    position: absolute;
+    transform: translateX(-50%);
+    height: 100vh;
+    width: 100%;
+    .Hidden {
+      display: none;
+    }
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      display: block;
+      margin: auto;
+    }
+  }
+
+  .Extra-Previous-Page {
+    left: calc(50% - 4000px);
+  }
+
+  .Previous-Page {
+    left: calc(50% - 2000px);
+  }
+
+  .Active-Page {
+    left: 50%;
+  }
+
+  .Next-Page {
+    left: calc(50% + 2000px);
+  }
+
+  .Extra-Next-Page {
+    left: calc(50% + 4000px);
+  }
+
+  .Transitioning {
+    transition: left 0.2s ease-out;
+  }
+
+  .Placeholder {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    background-color: #1B1B1B;
+    width: 100%;
+    height: 100%;
+    img {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%);
+      z-index: 1000;
+    }
+  }
+}

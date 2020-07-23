@@ -1,0 +1,32 @@
+@import "stylesheets/grid";
+@import "stylesheets/loading";
+@import "stylesheets/login";
+@import "stylesheets/reader";
+
+header {
+  position: absolute;
+  width: 100%;
+  .Logo {
+    display: block;
+    max-width: 512px;
+    margin: 3rem auto;
+  }
+}
+
+p {
+  color: #FFFFFF;
+}
+
+label {
+  color: #FFFFFF;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+html, body, main, #root {
+  height: 100%;
+}
+
+.App {
+  height: 100%;
+}
